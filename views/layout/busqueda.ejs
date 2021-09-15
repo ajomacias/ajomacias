@@ -1,0 +1,30 @@
+<%for (var receta=0; receta<recetas.length; receta++) { %>
+    <% if(recetas[receta].nom_receta==busqueda){ %>
+       
+        <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <img style="height: 170px;" src="<%= recetas[receta].img_receta%>" class="card-img-top" alt="...">
+                <h5 class="card-title"><%= recetas[receta].nom_receta%></h5>
+                <p class="card-text"><%= recetas[receta].descripcion_receta%> <br/>precio: $<%= recetas[receta].total_receta%></p>
+                <a href="<%= recetas[receta].link_receta%>" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <% }%>
+          
+          <%if (recetas[receta].categoria==busqueda) {%>
+            
+        <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <img style="height: 170px;" src="<%= recetas[receta].img_receta%>" class="card-img-top" alt="...">
+                <h5 class="card-title"><%= recetas[receta].nom_receta%></h5>
+                <p class="card-text"><%= recetas[receta].descripcion_receta%> <br/>precio: $<%= recetas[receta].total_receta%></p>
+                <a href="<%= recetas[receta].link_receta%>" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <% }%> 
+                 
+<%}%>

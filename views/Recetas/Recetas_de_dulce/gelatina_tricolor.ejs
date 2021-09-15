@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecEc</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/main.css">
+ 
+    <!-- INICIO de MD BOOSTRAP FRAMEWORK -->
+ 
+<!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a319c889e6.js" crossorigin="anonymous"></script>
+
+<!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />  
+<!-- MDB -->
+    <link  
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+    rel="stylesheet"
+    >  
+<!-- Ioicons -->
+<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+</head>
+<body id="body">
+ 
+   <!-- Navbar-->
+   <%- include ../../layout/header.ejs %> 
+
+    <!-- FIN Navbar -->
+ 
+   <!-- Banner -->
+
+<section class= "banner-gelatinaTricolor">
+    <div>
+        <div class="starter-template text-dark">
+            <h1 class="">Gelatina Tricolor</h1>
+            <p >Delicious</p>
+        </div>
+    </div>
+</section>
+
+ <!-- Fin Banner -->
+
+ 
+<!-- Ribbon -->
+
+<div id="ribbon" class="container-fluid p-3">
+    <div id="birthday" class="container w-50 pl-5 rounded-lg">
+        <div class="row align-items-center">
+ 
+             <div class="cols-sm p-3 text-light text-center">
+                <p class="text-warning h1">Preparación</p>
+                <h4 class="h2 text-shadow">Ingredientes: </h4>
+             </div>
+        </div>
+    </div>
+</div>   
+
+<!-- Fin Ribbon -->
+
+<!-- Inicio de la receta-->
+        <div class="container">
+            <hr>
+            <!-- Inicio de las entradas -->
+            <div class="row">
+                <!-- Boostrap trabaja con 12 columnas de las cuales en la siguiente linea de codigo solo cogemos 8 / 12 -->
+                <div class="col-lg-8">
+                    <!-- Fila 1  -->
+                        <h2 id="t" class="card-title text-center">
+                            GELATINA TRICOLOR
+                        </h2>
+                        <p>Checa este postre sencillo y fácil de preparar, del gusto de todos y dale a tu familia el momento dulce de la tarde, les encantara asi que disfrutalo</p>
+                        <hr>
+                     <div class="col">
+                            <div id="f" class=" card w-100 mb-5">
+                                    <img src="https://www.aki.com.ec/wp-content/uploads/2021/01/gelatina.jpg" alt="" class="card-img-top img-fluid">
+                            </div>  
+                            <div class="row">  <!-- Esta linea esta dentro de una fila 2 columnas  -->
+                                <div id="i" class="col-lg-6"><h3>Ingredientes:</h3>
+                                    <div class="row p-1">
+ 
+                                        <div class="col">
+                                            <p>
+                                                3 sobres de gelatina<br>
+                                                Agua fría <br>
+                                                Agua hirviendo <br>
+                                                Leche condensada <br>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                  <div id="p" class="col-lg-6"><h3>Preparación:</h3>
+                                <p>1).Disuelve el primer sobre de gelatina en una taza de agua hirviendo, ahora agrégale una taza de agua fría y revuelve. En un molde previamente engrasado con un poco de aceite, agrega la mitad de la mezcla y llévalo a refrigerar por 15 minutos.<br>
+                                2).A la mezcla restante, agrega ¼ de taza de leche condensada y revuelve. Agrega esta mezcla al molde y vuelve a refrigerar.  <br>
+                                3).Repite este proceso con los demás sabores de gelatina, pero asegúrate de enfriar por 15 minutos entre capa y capa..<br>
+                                4).Cuando ya estén las capas completas, refrigera todo por 3 horas.<br>
+                                5).¡Listo! Ahora puedes servir este rico y fácil postre. Báñalo en leche condensada y disfrútalo.<br>
+                                </p>
+                            
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6"><h5>Porciones:</h5> 
+                                      
+                                        <i id="restaurant"  class="icon ion-md-restaurant"></i>
+                                   
+                                        <!-- <input class="btn btn-outline-dark" type="number" value="4"> -->
+                                        <label for="">10</label>
+                                            
+                                        </input>
+                                    </div>
+                                    <div class="col-lg-6 d-grid"><h5>Guardar:</h5>
+                                        <a href="/guardar/21" type="btn btn-info" class="icon ion-md-save"></a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <hr>
+                      </div>  
+                </div>
+
+                 <!-- Aside -->
+            <div class="col-lg-4" >
+                <div class="card-body">
+                    <h4 class="text-center"> ARTÍCULOS RECOMENDADOS</h4>
+                    <a href="https://www.alimentatubienestar.es/ideas-para-preparar-postres-saludables/">
+                    <img src="https://i1.wp.com/alimentatubienestar.es/wp-content/uploads/2014/04/Postres-saludables-consejos1.jpg?ssl=1" class="img-fluid">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <hr> 
+                    <a href="#">
+                    <img src="https://www.valor.es/wp-content/uploads/2016/05/chocolate-puro-postres-2.png" alt=""class="img-fluid">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <hr> 
+                    <a href="https://www.philadelphia.cl/recetas/postres/recetas-de-flanes/flan-de-arroz-con-leche/">
+                    <img src="https://www.philadelphia.cl/modx/assets/img/recetas/principal/recetas_full_v2/postres/flanes/flan_de_arroz_con_leche.jpg" alt=""class="img-fluid">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <hr> 
+                    <a href="https://www.recetasgratis.net/articulo-20-bebidas-con-ginebra-faciles-74346.html">
+                    <img src="https://t1.rg.ltmcdn.com/es/images/6/4/3/20_bebidas_con_ginebra_faciles_74346_600_square.jpg" alt=""class="img-fluid">
+                    </a>
+                </div>
+            </div>
+                <!-- FIN Aside -->
+ 
+
+            </div>
+        
+
+            </div>
+        </div>
+<!-- Fin de la receta -->
+
+
+<!-- Footer -->
+<%- include ../../layout/footer.ejs %> 
+<!-- Fin Footer -->
+ 
+
+    <!-- Fin de la linea del Js Del Scroll -->
+    <script src="<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="../../myjs/print.js"></script>
+</body>
+</html>

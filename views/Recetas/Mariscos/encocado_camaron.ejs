@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecEc</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+ 
+    <!-- INICIO de MD BOOSTRAP FRAMEWORK -->
+ 
+<!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a319c889e6.js" crossorigin="anonymous"></script>
+
+<!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />  
+<!-- MDB -->
+    <link  
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+    rel="stylesheet"
+    >  
+<!-- Ioicons -->
+<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+</head>
+<body>
+ 
+   <!-- Navbar-->
+
+  <% include ../../layout/header.ejs %> 
+
+    <!-- FIN Navbar -->
+ 
+   <!-- Banner -->
+
+<section class="banner-encocadocamaron">
+    <div>
+        <div class="starter-template text-dark">
+            <h1 class="">Encocado de camarón</h1>
+            <p >Marisco</p>
+        </div>
+    </div>
+</section>
+
+ <!-- Fin Banner -->
+
+ 
+<!-- Ribbon -->
+
+   <div id="ribbon" class="container-fluid p-3">
+    <div id="birthday" class="container w-50 pl-5 rounded-lg">
+        <div class="row align-items-center">
+ 
+             <div class="cols-sm p-3 text-light text-center">
+                <p class="text-warning h1">Preparación</p>
+                <h4 class="h2 text-shadow">Ingredientes: </h4>
+             </div>
+        </div>
+    </div>
+</div>   
+
+<!-- Fin Ribbon -->
+
+<!-- Inicio de la receta-->
+        <div class="container">
+            <hr>
+            <!-- Inicio de las entradas -->
+            <div class="row">
+                <!-- Boostrap trabaja con 12 columnas de las cuales en la siguiente linea de codigo solo cogemos 8 / 12 -->
+                <div class="col-lg-8">
+                    <!-- Fila 1  -->
+                        <h2 class="card-title text-center">
+                            ENCOCADO DE CAMARÓN
+                        </h2>
+                        <p>El Encocado de Camarón es uno de los platos típico de la costa ecuatoriana, específicamente de la provincia de Esmeraldas, uno de sus ingredientes principales es el jugo de coco de aquí es donde nace su nombre.</p>
+                        <hr>
+                     <div class="col">
+                     <div class="col">
+                            <div class=" card w-100 mb-5">
+                                    <img src="https://www.recetasdecamaron.com/wp-content/uploads/2019/05/Receta-de-ENCOCADO-de-Camar%C3%B3n.jpg">
+                            </div>  
+                            <div class="row">  <!-- Esta linea esta dentro de una fila 2 columnas  -->
+                                <div class="col-lg-6"><h3>Ingredientes:</h3>
+                                    <div class="row p-1">
+ 
+                                        <div class="col">
+                                            <p>
+                                                
+                                                1/2 libra camaron <br>
+                                                Pulpa de coco <br>
+                                                1/2 litro Leche <br>
+                                                Cebolla blanca <br>
+                                                Cebolla colorada <br>
+                                                Pimiento verde a<br>
+                                                Pasta de ajo  <br>
+                                                Sal<br>
+
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                  <div class="col-lg-6"><h3>Preparación:</h3>
+                                    <p>
+
+                                        1) Pelar y Limpiar los camarones<br>
+                                        2) Refrito de 4 ajos, pimiento, cebolla blanca y cebollín, sazonar con pimienta, comino y sal.<br>
+                                        3) Previo licuar la pulpa del coco con el medio litro de leche y mezclar con el refrito.<br>
+                                        4) Colocar los camarones limpios en El sartén, y al rededor de unos 5 minutos de cocción a fuego medio ya deben estar listos.<br>
+                                        5) Al final, colocamos un poco de maícena con el objetivo de que se espece el caldo. Pueden acompañarlo con lo que deseen,con unos patacones quedaran excelente.
+                                
+                                    
+                                    </p>
+    
+                            
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6"><h5>Porciones:</h5> 
+                                      
+                                        <i id="restaurant"  class="icon ion-md-restaurant"></i>
+                                   
+                                        <!-- <input class="btn btn-outline-dark" type="number" value="4"> -->
+                                        <label for="">3</label>
+                                            
+                                        </input>
+                                    </div>
+                                    <div class="col-lg-6 d-grid"><h5>Guardar:</h5>
+                                        <a href="/guardar/10" type="btn btn-info" class="icon ion-md-save"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                      </div>  
+
+                </div>
+
+            </div>
+           <!-- Aside -->
+            <div class="col-lg-4" >
+                <div class="card-body">
+                    <h4 class="text-center"> ARTÍCULOS RECOMENDADOS</h4>
+                    <a href="#">
+                    <img src="https://i.pinimg.com/originals/51/52/8f/51528f475951f4c110096da4e6d66883.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <hr> 
+                    <a href="#">
+                    <img src="https://www.lifeder.com/wp-content/uploads/2018/04/come-bien-vive-bien-min-1024x1024.jpg" alt=""class="img-fluid">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <hr> 
+                    <a href="#">
+                    <img src="https://i.pinimg.com/originals/60/2d/64/602d64e08f3e41742a851582817e0b0a.png" alt=""class="img-fluid">
+                    </a>
+                </div>
+            </div>
+                <!-- FIN Aside -->
+ 
+
+            </div>
+        </div>
+<!-- Fin de la receta -->
+
+   
+
+
+<!-- Footer -->
+<% include ../../layout/footer.ejs %> 
+<!-- Fin Footer -->
+ 
+
+    <!-- Fin de la linea del Js Del Scroll -->
+    <script src="<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

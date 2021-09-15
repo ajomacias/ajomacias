@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecEc</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/css/main.css">
+ 
+    <!-- INICIO de MD BOOSTRAP FRAMEWORK -->
+ 
+<!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a319c889e6.js" crossorigin="anonymous"></script>
+
+<!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />  
+<!-- MDB -->
+    <link  
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+    rel="stylesheet"
+    >  
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+</head>
+<body id="body">
+ 
+   <!-- Navbar-->
+
+   <%- include ../../layout/header.ejs %> 
+    <!-- FIN Navbar -->
+ 
+   <!-- Banner -->
+
+   <section class= "banner-Tarta">
+    <div>
+        <div class="starter-template text-dark">
+            <h1 class="">Tarta de Helado</h1>
+            <p >Sierra</p>
+        </div>
+    </div>
+</section>
+
+ <!-- Fin Banner -->
+
+ 
+<!-- Ribbon -->
+
+   <div id="ribbon" class="container-fluid p-3">
+    <div id="birthday" class="container w-50 pl-5 rounded-lg">
+        <div class="row align-items-center">
+ 
+             <div class="cols-sm p-3 text-light text-center">
+                <p class="text-warning h1">Preparación</p>
+                <h4 class="h2 text-shadow">Ingredientes: </h4>
+             </div>
+        </div>
+    </div>
+</div>   
+
+<!-- Fin Ribbon -->
+
+<!-- Inicio de la receta-->
+        <div class="container">
+            <hr>
+            <!-- Inicio de las entradas -->
+            <div class="row">
+                <!-- Boostrap trabaja con 12 columnas de las cuales en la siguiente linea de codigo solo cogemos 8 / 12 -->
+                <div class="col-lg-8">
+                    <!-- Fila 1  -->
+                        <h2 id="t" class="card-title text-center">
+                            TARTA DE HELADO
+                        </h2>
+                        <p>Tarta de Helado de Fresa y Chocolate es un postre conocido internacionalmente, que se sirve frecuentemente en reuniones, como fiestas de cumpleaños y bodas.</p>
+                        <hr>
+                     <div class="col">
+                            <div id="f" class=" card w-100 mb-5">
+                                    <img src="data:image/jpeg;base64,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" alt="" class="card-img-top img-fluid">
+                            </div>  
+                            <div class="row">  <!-- Esta linea esta dentro de una fila 2 columnas  -->
+                                <div id="i" class="col-lg-6"><h3>Ingredientes:</h3>
+                                    <div class="row p-1">
+ 
+                                        <div class="col">
+                                            <p>
+                                                1 paquete de(6.3 oz) Galletas María de Chocolate<br>
+                                                6 cucharadas mantequilla sin sal, derretida<br>
+                                                1 1/2 cuartos helado de vainilla, ablandado<br>
+                                                1 paquete (14 oz) pulpa de fresas congeladas, descongelar<br>
+                                                6 oz chocolate amargo picado<br>
+                                                6 oz crema de leche<br>
+                                                1/2 pinta fresas, sin tallo y cortadas por la mitad para decorar<br>
+                                                 
+                                                
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                  <div id="p" class="col-lg-6"><h3>Preparación:</h3>
+                                <p>1).Para la corteza: Añada las galletas en el procesador de alimentos. Pulse para qué las galletas queden en migajas finas, por unos 30 segundos. Añada la mantequilla derretida y pulse hasta qué quede húmeda. Transfiera la mezcla de migas a un molde de tortas, y con firmeza vaya presionando hasta abajo para qué quede la capa uniforme. Cubra con papel de plástico, deje congelado hasta qué quede firme aproximadamente 30 minutos. <br>
+                                2).Para el helado: Agregue el helado y la pulpa de fresa en un tazón grande para mezclar. Usando la batidora de mano, mezcle hasta qué quede suave y bien combinado. Usando una espátula, extienda el helado de manera uniforme sobre la corteza de la galleta, ejerciendo una suave presión para qué la capa de helado sea uniforme. Cubra con papel de plástico, envolviéndolo directamente sobre la superficie. Congelar hasta qué quede firme, aproximadamente 3 horas <br>
+                                3).Para la cobertura de chocolate: Agregue el chocolate y la crema en un recipiente grande, resistente al calor, sumérjalo en una cacerola con agua hirviendo a fuego lento, asegurándose de qué el fondo del recipiente no toque el agua. Cocine revolviendo, hasta qué el chocolate se derrita y la mezcla éste suave y combinada, retire del fuego. Deje reposar hasta qué la mezcla de chocolate este caliente al tacto.<br>
+                                4).Usando una espátula, distribuya la crema de chocolate de manera uniforme sobre el helado de fresas, cubra con plástico. Congela hasta qué quede, aproximadamente 30 minutos. Decore con fresas antes de servir si deseas.<br>
+                                ¡A disfrutar!
+                                </p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6"><h5>Porciones:</h5> 
+                                      
+                                        <i id="restaurant"  class="icon ion-md-restaurant"></i>
+                                   
+                                        <!-- <input class="btn btn-outline-dark" type="number" value="4"> -->
+                                        <label for="">4</label>
+                                            
+                                        </input>
+                                    </div>
+                                    <div class="col-lg-6 d-grid"><h5>Guardar:</h5>
+                                        <a href="/guardar/23" type="btn btn-info" class="icon ion-md-save"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                      </div>  
+                </div>
+
+                 <!-- Aside -->
+            <div class="col-lg-4" >
+                <div class="card-body">
+                    <h4 class="text-center"> ARTÍCULOS RECOMENDADOS</h4>
+                    <a href="https://www.pequerecetas.com/receta/recetas-aprovechamiento-sobras-comidas/">
+                    <img src="https://www.pequerecetas.com/wp-content/uploads/2020/03/Recetas-para-aprovechar-restos.jpg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <hr> 
+                    <a href="https://bladenonline.com/un-nuevo-video-con-receta/">
+                    <img src="https://bladenonline.com/wp-content/uploads/2021/06/Copy-of-Copy-of-Weekly-Recipe1-1.png" alt=""class="img-fluid">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <hr> 
+                    <a href="https://www.recetasnestle.com.ec/">
+                    <img src="https://www.recetasnestle.com.ec/sites/default/files/2020-11/recetas-practicas-deliciosas-banner.jpg" alt=""class="img-fluid">
+                    </a>
+                </div>
+            </div>
+                <!-- FIN Aside -->
+ 
+
+            </div>
+        
+
+            </div>
+        </div>
+<!-- Fin de la receta -->
+
+   
+
+
+<!-- Footer -->
+<%- include ../../layout/footer.ejs %> 
+<!-- Fin Footer -->
+ 
+
+    <!-- Fin de la linea del Js Del Scroll -->
+    <script src="<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/myjs/print.js"></script>
+</body>
+</html>

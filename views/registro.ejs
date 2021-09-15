@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <style>
+        body{
+            background: #ffe259;
+            background: linear-gradient(to right, #ffa751, #ffe259);
+        }
+        .bg{
+            background-image: url(img/BG.jpg);
+            background-position: center center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container w-75 bg-primary mt-5 rounded shadow">
+        <div class="row align-items-stretch ">
+            <!-- Esta linea tiene una clase "bg y en ella contiene a la imagen" -->
+            <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+                
+            </div>
+
+                <div class="col bg-white p-5 rounded-end">
+                    <div class="text-end">
+                        <img src="" width="48" alt="" >
+                    </div>
+                    <h2 class="fw-bold text-center py-5">Registro</h2>
+                    <!-- Registro inicio -->
+    
+                    <form action="/registrar" method="POST" >
+                        <div class="col-md-12">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" name="name" id="nombre" value="" required>
+                        </div>
+                        <div class="col-md-12">
+                        <label for="lastname" class="forsazssxxssxsm-label">Apellido</label>
+                        <input type="text" class="form-control" name="Apellido"  id="apellido" required>
+                        </div>
+                        <div class="col-md-12">
+                        <label for="" class="form-label">Correo electrónico</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            <input type="email" name="email" class="form-control" id=""  required>
+                        </div>
+                        </div>
+                        <div class="col-md-12">
+                        <label for="contra" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" name="Contra" id="contra" required>
+    
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="text" class="form-control" name="Telefono" id="telefono" required>
+    
+                        </div>
+
+    
+                        <div class="col-12 p-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="terminos" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                                Acepta los términos y condiciones
+                            </label>
+                            <div class="invalid-feedback">
+                            You must agree before submitting.
+                            </div>
+                        </div>
+                        </div>
+                        <div class="d-grid">
+                        <button  class="btn-register" value="Save" type="submit" >Registrarse</button>
+                        <span><a href="/login">Iniciar sesion</a></span>
+                        </div>
+                    </form>
+    
+                    <!-- Login con redes sociales -->
+                    
+                    <div class="container w-100 my-4    ">
+                        <div class="row text-center">
+                            <div class="col-12">Iniciar sesión
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <button class="btn btn-outline-primary w-100 my-1">
+                                        <div class="row align-items-center">
+                                            <div class="col-2 d-none d-md-block ">
+                                                <img src="img/logos redes sociales/fb.png" width="32"  alt="">
+                                            </div>
+                                            <div class="col-12 col-md-10 text-center">
+                                                Facebook
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-outline-danger w-100 my-1">
+                                        <div class="row align-items-center">
+                                            <div class="col-2 d-none d-md-block">
+                                                <img src="img/logos redes sociales/google.png" width="32"  alt="">
+                                            </div>
+                                            <div class="col-12 col-md-10 text-center">
+                                                Google
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+
+                    <!-- Fin de login con redes sociales -->
+
+
+                </div>
+        </div>
+
+    </div>
+
+
+
+
+    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <% if (typeof alert != "undefined") {%>
+    <script>
+        swal.fire({
+            title: "<%=alertTitle%>",
+            text: "<%=alertMessage%>",
+            icon: "<%=alertIcon%>",
+            showconfirmButton:true,
+        }).then(()=>{
+       window.location='/<%=ruta %>'
+     })
+
+    </script>
+    <% } %> 
+
+
+    <script src="<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script></script>
+    <script src="/public/javascripts/bootstrap.min.js"></script>
+    <script src="/public/registrar.js"></script>
+</body>
+</html>
