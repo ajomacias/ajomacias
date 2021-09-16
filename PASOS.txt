@@ -1,9 +1,0 @@
-Framework: Nodejs
-Base de datos: Mysql con el gestor phpMyadmin
-
-Crear la base de datos en el archivo ecuarec.sql
-tal como esta en el archivo.
-Instalar todas las dependecias mediante
-mpm install.
-NOTA: Puede eliminar este archivo y ecuarec.sql
-luego de haber realizado lo dicho efectivamente.
